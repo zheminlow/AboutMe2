@@ -8,9 +8,35 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvName"
         android:text="@string/myName"
         style="@style/myFontStyle" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/myFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="What is your nickname?"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="DONE" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/myFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:textAlignment="center"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/imageView"
